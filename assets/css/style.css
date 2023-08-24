@@ -875,7 +875,7 @@ a:hover {
   transition: all 500ms ease;
   color: #fff;
   background-color: #d9534f;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #ffffff;
 }
 
 .service-box .service-ico {
