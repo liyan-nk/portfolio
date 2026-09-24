@@ -3,768 +3,501 @@
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Liyan Nechikaden</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- SEO & Open Graph Meta Tags -->
+  <title>Liyan Nechikaden | Full Stack Developer & CS Student</title>
+  <meta name="description" content="Portfolio of Liyan Nechikaden — Full Stack Developer, CS Student @ KMCT CEETM, and Technical Intern @ MindBae. Building production web applications, anonymous campus platforms, and interactive digital products.">
+  <meta name="keywords" content="Liyan Nechikaden, Full Stack Developer, Next.js, TypeScript, React, Kerala Developer, MindBae, KMCT CEETM, Software Engineer">
+  <meta property="og:title" content="Liyan Nechikaden | Full Stack Developer & CS Student">
+  <meta property="og:description" content="Full Stack Developer & Engineering Student. Check out my projects, work experience, and tech stack.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/liyan-nk">
 
-  <!-- Favicons -->
-  <link href="assets/img/IMG_20230330_181717_105.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/my-img.jpg" type="image/jpeg">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <!-- Custom Tactical Reticle Cursor -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-dot"></div>
 
-      <h1 class="logo"><a href="index.html">Liyan Nechikaden</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  <!-- Toast Notification -->
+  <div id="toast-notification">Email copied to clipboard!</div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#work">Work</a></li> -->
-          <!-- <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+  <!-- ======= Navigation ======= -->
+  <nav class="navbar-tactical">
+    <div class="container">
+      <a href="#hero" class="nav-brand" title="Click for system diagnostic">
+        <span class="brand-symbol">LNK</span>
+        <span>LIYAN.NK</span>
+      </a>
 
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="assets/Liyan_Nechikaden_Resume.pdf" target="_blank" class="btn-tactical btn-outline">
+            <i class="bi bi-file-earmark-pdf"></i> Resume
+          </a>
+        </li>
+      </ul>
+
+      <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <i class="bi bi-list"></i>
+      </button>
     </div>
-  </header><!-- End Header -->
+  </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/bg-hero.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Liyan Nechikaden</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Video Editor"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+  <main>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hud-tag">SYSTEM // ONLINE & READY</div>
+            
+            <div class="hero-badge">
+              <span class="status-pulse"></span>
+              <span class="status-message-text">Available for Cool Projects & Technical Roles</span>
+            </div>
+
+            <h1 class="hero-title">
+              I build software. <br>Break software. <span class="text-gradient">Occasionally fix it.</span>
+            </h1>
+
+            <p class="hero-description">
+              I'm <strong>Liyan Nechikaden</strong> — Full Stack Developer & CS Student. CSE by enrollment, professional tab hoarder by experience. Currently shipping production web features at <strong>MindBae</strong> and coordinating student activities at <strong>KMCT CEETM</strong>.
+            </p>
+
+            <div class="hero-ctas">
+              <a href="#projects" class="btn-tactical btn-primary">
+                Explore Projects <i class="bi bi-arrow-down-short"></i>
+              </a>
+              <button class="btn-tactical btn-outline js-copy-email">
+                <i class="bi bi-clipboard"></i> Copy Email
+              </button>
+              <a href="assets/Liyan_Nechikaden_Resume.pdf" target="_blank" class="btn-tactical btn-outline">
+                <i class="bi bi-download"></i> PDF Resume
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-value">1,500+</div>
+                <div class="stat-label">Monthly Visitors</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">150+</div>
+                <div class="stat-label">Community Scale</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">12%</div>
+                <div class="stat-label">Sales Boost Delivered</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">2029</div>
+                <div class="stat-label">Degree Grad Year</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="tactical-frame">
+              <div class="tactical-header">
+                <span>LOC // KERALA, IN</span>
+                <span>STATUS // 200 OK</span>
+              </div>
+
+              <!-- Profile avatar frame styled for full head & face visibility -->
+              <div class="profile-avatar-box">
+                <img src="assets/img/my-img.jpg" alt="Liyan Nechikaden profile photo">
+              </div>
+
+              <div class="tactical-footer">
+                <span>STACK // NEXT.JS + TS</span>
+                <span>ID // LIYAN-NK</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
+    </section>
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <section id="about" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/my-img.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Liyan Nechikaden</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Front-End Developer</span></p>
-                        <p><span class="title-s">Email: </span> <span>lnk.liyannk.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+91 8304845085</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>HTML</span> <span class="pull-right">100%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS</span> <span class="pull-right">95%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JavaScript</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CMS</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>SEO</span> <span class="pull-right">70%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Photoshop</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Illustrator</span> <span class="pull-right">80%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>Premiere Pro</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      I'm a 16-year-old front-end developer, passionate about creating visually stunning and interactive digital experiences. With expertise in HTML, CSS, and JavaScript, I specialize in crafting intuitive user interfaces that engage and delight users. From responsive web design to seamless navigation, I strive to create websites that provide exceptional user experiences and leave a lasting impact.
-                    </p>
-                    <p class="lead">
-                      As a graphic designer, I have a keen eye for aesthetics and a deep understanding of design principles. I love bringing brands to life through captivating visuals, whether it's designing logos, illustrations, or marketing materials. Using industry-standard design tools, I create visually appealing assets that effectively communicate the essence of a brand and resonate with its target audience.
-                    </p>
-                    <p class="lead">
-                      In addition to my skills in front-end development and graphic design, I also have a passion for video editing. With hands-on experience in professional editing software, I excel at cutting, trimming, and enhancing footage to create compelling videos. From incorporating visual effects to ensuring seamless transitions, I strive to produce videos that tell engaging stories and captivate viewers. I am constantly expanding my knowledge in this field to deliver high-quality video content that leaves a lasting impression.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="section-header">
+          <div class="hud-tag">01 / ABOUT ME</div>
+          <h2 class="section-title">CSE student by day. Tab hoarder by night.</h2>
         </div>
-      </div>
-    </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Services
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div class="grid-2col">
+          <div class="info-block">
+            <div class="info-block-header">
+              <i class="bi bi-terminal-box"></i>
+              <h3>Pragmatic Craft & Real-World Execution</h3>
+            </div>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+              I take ideas from a blank screen to something people actually click on and use. From full-stack Next.js apps to campus-wide dialogue platforms, I care about readable code, fast load times, and intuitive UX.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.7;">
+              When I'm not fixing 2-pixel alignment issues at 1 AM, I'm shipping features for <strong>MindBae</strong> or growing tech communities across Kerala.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-header">
+              <i class="bi bi-mortarboard"></i>
+              <h3>Education & Current Focus</h3>
+            </div>
+            <div style="margin-bottom: 1.25rem;">
+              <h4 style="color: var(--text-primary); font-size: 1.1rem;">B.Tech in Computer Science & Engineering</h4>
+              <p style="color: var(--accent-crimson); font-family: var(--font-mono); font-size: 0.85rem;">KMCT CEETM, Kerala Technological University (2025 – 2029)</p>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.4rem;">Location: Perinthalmanna, Malappuram, Kerala</p>
+            </div>
+            <div style="border-top: 1px dashed var(--border-subtle); padding-top: 1rem;">
+              <p style="color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono);">
+                CORE INTERESTS: Web Engineering · System Design · AI Integrations · Digital Products
               </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Design</h2>
-                <p class="s-description text-center">
-                  I specialize in creating visually appealing and user-friendly websites that effectively communicate your brand's message. With a keen eye for design and attention to detail, I ensure that your website stands out from the crowd. <br> <br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                 I provide comprehensive web development solutions, bringing your website to life with functionality and interactivity. From front-end development using cutting-edge technologies to robust back-end programming, I deliver seamless user experiences.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Hosting</h2>
-                <p class="s-description text-center">
-                  I offer reliable hosting services to ensure your website is always accessible to your target audience. With secure and high-performance servers, I provide a stable hosting environment that guarantees maximum uptime and fast loading speeds. <br><br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Responsive Design</h2>
-                <p class="s-description text-center">
-                  With the increasing use of mobile devices, it's crucial to have a website that adapts seamlessly to different screen sizes. I specialize in responsive design, ensuring that your website looks great and functions flawlessly across desktops, tablets, and smartphones. <br><br>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Graphic Design</h2>
-                <p class="s-description text-center">
-                  I have a strong background in graphic design, enabling me to create captivating visuals that enhance your brand identity. From logo design to custom illustrations, I provide creative solutions that align with your vision and capture the attention of your audience.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-laptop"></i></span>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Video Editing</h2>
-                <p class="s-description text-center">
-                  I offer professional video editing services to help you tell your story in a compelling and engaging way. Whether it's editing footage, adding effects and transitions, or incorporating music and voiceovers, I have the expertise to transform raw footage into a polished and impactful final product.
-                </p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Counter Section ======= -->
-    <!-- <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg);">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="139" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">WORKS COMPLETED</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">YEARS OF EXPERIENCE</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-people"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">TOTAL CLIENTS</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-calendar-week"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="counter purecounter"></p>
-                <span class="counter-text">ONGOING PROJECTS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> --><!-- End Counter Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="work" class="portfolio-mf sect-pt4 route">
+    <!-- ======= Experience Section ======= -->
+    <section id="experience" class="section" style="background-color: var(--bg-secondary);">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <div class="section-header">
+          <div class="hud-tag">02 / WORK EXPERIENCE</div>
+          <h2 class="section-title">Where I've worked & built stuff</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: MindBae -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jun 2026 – Present</span>
+              <h3 class="timeline-role">Technical Intern</h3>
+              <div class="timeline-company">MindBae</div>
+              <ul class="timeline-bullets">
+                <li>Shipped production web platform features using <strong>Next.js, React, TypeScript, Supabase, PostgreSQL, and Tailwind CSS</strong>.</li>
+                <li>Wrestled authentication flows, booking workflows, bug fixes, and responsive UI improvements in a Git-based workflow.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: XandY Learning -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jul 2026 – Present</span>
+              <h3 class="timeline-role">Marketing Strategist & Community Manager</h3>
+              <div class="timeline-company">XandY Learning (UGC Community)</div>
+              <ul class="timeline-bullets">
+                <li>Engineered growth strategies scaling a <strong>150+ member community</strong> across five active circles.</li>
+                <li>Led engagement initiatives, content calendar, and member interactions while collaborating with core leadership.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: Freelance Web Developer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Jan 2023 – Dec 2024</span>
+              <h3 class="timeline-role">Freelance Web Developer</h3>
+              <div class="timeline-company">Client Projects</div>
+              <ul class="timeline-bullets">
+                <li>Built and deployed SEO-optimized business websites averaging <strong>1,500+ monthly visitors</strong>.</li>
+                <li>Delivered a custom business website that directly drove a <strong>12% increase in client sales</strong>.</li>
+                <li>Engineered a Higher Secondary School portal using <strong>SCSS, Nunjucks, and JavaScript</strong> for <strong>500+ weekly visitors</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Featured Projects ======= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="hud-tag">03 / FEATURED WORK</div>
+          <h2 class="section-title">Things I've built that haven't broken yet</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Campus Echo -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge-tag">CAMPUS DIALOGUE // 2025</span>
+              <h3 class="project-title">Campus Echo</h3>
+              <p class="project-description">
+                Anonymous campus communication platform for students to share feedback and talk with university administration safely. Tested with 30+ pilot users.
               </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
+              <div class="project-tech">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">Prisma</span>
+                <span class="tech-pill">Cloudinary</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Tailwind CSS</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
+            <div class="project-actions">
+              <a href="https://campus-echo-v3.web.app" target="_blank" class="project-link">
+                Live App <i class="bi bi-box-arrow-up-right"></i>
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
+              <a href="https://github.com/liyan-nk/Campus-Echo" target="_blank" class="project-link" style="color: var(--text-muted);">
+                <i class="bi bi-github"></i> Repository
               </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
-        </div> -->
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Xavi Alonso</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div> --><!-- End testimonial item -->
-
-                <!-- <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Marta Socrate</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div> --><!-- End testimonial item -->
-              <!-- </div>
-              <div class="swiper-pagination"></div>
-            </div> -->
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          <!-- </div>
-        </div>
-      </div>
-    </div> --><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <!-- <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          <!-- Project 2: SkillForge -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge-tag">SKILL ANALYTICS // 2026</span>
+              <h3 class="project-title">SkillForge</h3>
+              <p class="project-description">
+                Personal habit & skill tracker built around consistency, session logs, streak tracking, and visual analytics charts.
               </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
+              <div class="project-tech">
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Zustand</span>
+                <span class="tech-pill">Recharts</span>
+                <span class="tech-pill">TypeScript</span>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
+            <div class="project-actions">
+              <a href="https://skill-forge-puce.vercel.app" target="_blank" class="project-link">
+                Live App <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="https://github.com/liyan-nk/skill-forge" target="_blank" class="project-link" style="color: var(--text-muted);">
+                <i class="bi bi-github"></i> Repository
+              </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
+
+          <!-- Project 3: Library Management System -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge-tag">RESOURCE ADMIN // 2024</span>
+              <h3 class="project-title">Library System</h3>
+              <p class="project-description">
+                Role-based library management system for issue/return workflows, user administration, and bulk data import. Because spreadsheets make terrible library managers.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">Flask</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">SQLite</span>
+                <span class="tech-pill">HTML/CSS</span>
               </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
+            </div>
+            <div class="project-actions">
+              <a href="https://library-system-demo.onrender.com" target="_blank" class="project-link">
+                Live Demo <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+              <a href="https://github.com/liyan-nk/Library-System" target="_blank" class="project-link" style="color: var(--text-muted);">
+                <i class="bi bi-github"></i> Repository
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Ink-OS -->
+          <div class="project-card">
+            <div>
+              <span class="project-badge-tag">EXPERIMENTAL WEB OS</span>
+              <h3 class="project-title">Ink-OS</h3>
+              <p class="project-description">
+                Experimental browser desktop environment exploring canvas rendering, window management, and web-native desktop UX.
+              </p>
+              <div class="project-tech">
+                <span class="tech-pill">TypeScript</span>
+                <span class="tech-pill">HTML5 Canvas</span>
+                <span class="tech-pill">Web APIs</span>
+                <span class="tech-pill">JavaScript</span>
               </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/liyan-nk" target="_blank" class="project-link">
+                View on GitHub <i class="bi bi-github"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section> --><!-- End Blog Section -->
+    </section>
+
+    <!-- ======= Skills & Certifications ======= -->
+    <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div class="hud-tag">04 / TECH SPECTRUM</div>
+          <h2 class="section-title">Tools I use (and occasionally blame)</h2>
+        </div>
+
+        <div class="skills-wrapper">
+          <div>
+            <div class="skills-category">
+              <div class="category-title"><i class="bi bi-code-slash"></i> Languages & Frontend</div>
+              <div class="skills-flex">
+                <span class="skill-card">TypeScript</span>
+                <span class="skill-card">JavaScript</span>
+                <span class="skill-card">Python</span>
+                <span class="skill-card">C</span>
+                <span class="skill-card">React</span>
+                <span class="skill-card">Next.js</span>
+                <span class="skill-card">Tailwind CSS</span>
+                <span class="skill-card">HTML5 / CSS3</span>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <div class="category-title"><i class="bi bi-cpu"></i> Backend, Databases & Tools</div>
+              <div class="skills-flex">
+                <span class="skill-card">Node.js</span>
+                <span class="skill-card">Express</span>
+                <span class="skill-card">Flask</span>
+                <span class="skill-card">PostgreSQL</span>
+                <span class="skill-card">Prisma</span>
+                <span class="skill-card">Supabase</span>
+                <span class="skill-card">Firebase</span>
+                <span class="skill-card">Linux</span>
+                <span class="skill-card">Git & GitHub</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="category-title"><i class="bi bi-patch-check"></i> Certifications</div>
+            
+            <div class="cert-card">
+              <div class="cert-issuer">IIT MADRAS</div>
+              <div class="cert-title">Data Science & Artificial Intelligence</div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-issuer">COURSERA</div>
+              <div class="cert-title">Google AI Fundamentals</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Leadership Section ======= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="hud-tag">05 / LEADERSHIP & COMMUNITY</div>
+          <h2 class="section-title">Steering committees & student advocacy</h2>
+        </div>
+
+        <div class="grid-2col">
+          <div class="info-block">
+            <div class="info-block-header">
+              <i class="bi bi-award"></i>
+              <div>
+                <h3 style="font-size: 1.2rem;">Union Chairperson</h3>
+                <p style="font-size: 0.85rem; color: var(--accent-crimson); font-family: var(--font-mono);">KMCT CEETM</p>
+              </div>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.93rem;">
+              Coordinating student activities, organizing technical events, and acting as the primary liaison between students and university administration.
+            </p>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-header">
+              <i class="bi bi-people"></i>
+              <div>
+                <h3 style="font-size: 1.2rem;">Media Coordinator & General Secretary</h3>
+                <p style="font-size: 0.85rem; color: var(--accent-crimson); font-family: var(--font-mono);">Sciensters Science Club</p>
+              </div>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.93rem;">
+              Managed digital outreach, poster design, and online engagement initiatives for community science promotion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+    <section id="contact" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message
-                      </h5>
-                    </div>
-                    <div>
-                      <form id="submit-form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Get in touch with me today to discuss your project and how I can help you achieve your goals. Whether you need web design, web development, hosting, responsive design, graphic design, or video editing services, I am here to provide professional solutions tailored to your specific needs. Don't hesitate to reach out and let's start turning your ideas into reality.
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Aripra, Malappuram, Kerala, India</li>
-                        <li><span class="bi bi-phone"></span> +91 8304845085</li>
-                        <li><span class="bi bi-envelope"></span> lnk.liyannk@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li style="margin-right: 15px;"><a href="https://www.facebook.com/lnk.liyannk"><span><i style="font-size: 25px;" class="bi bi-facebook"></i></span></a></li>
-                        <li style="margin-right: 15px;"><a href="https://www.instagram.com/liyan_nk_"><span><i style="font-size: 25px;" class="bi bi-instagram"></i></span></a></li>
-                        <li style="margin-right: 15px;"><a href="https://twitter.com/liyan_nk_"><span><i style="font-size: 25px;" class="bi bi-twitter"></i></span></a></li>
-                        <li style="margin-right: 15px;"><a href="https://linkedin.in/liyan-nechikaden"><span><i style="font-size: 25px;" class="bi bi-linkedin"></i></span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="contact-card">
+          <div class="hud-tag">06 / GET IN TOUCH</div>
+          <h2 class="contact-title">Got a project? A questionable idea? Let's talk.</h2>
+          <p class="contact-subtitle">
+            Whether you have a technical role, an internship opportunity, a web project, or just want to discuss why CSS grid beats flexbox for full pages, my inbox is open.
+          </p>
+
+          <div class="contact-actions">
+            <a href="mailto:lnk.liyannk@gmail.com" class="btn-tactical btn-primary">
+              <i class="bi bi-envelope"></i> Send Email
+            </a>
+            <button class="btn-tactical btn-outline js-copy-email">
+              <i class="bi bi-clipboard"></i> Copy Email Link
+            </button>
+            <a href="assets/Liyan_Nechikaden_Resume.pdf" target="_blank" class="btn-tactical btn-outline">
+              <i class="bi bi-file-earmark-pdf"></i> Download Resume
+            </a>
           </div>
+
+          <ul class="social-links-bar">
+            <li>
+              <a href="https://github.com/liyan-nk" target="_blank" class="social-icon-btn" aria-label="GitHub Profile">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/liyan-nechikaden" target="_blank" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/liyan_nk_" target="_blank" class="social-icon-btn" aria-label="Instagram Profile">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
+    </section>
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Liyan Nechikaden</strong>. All Rights Reserved</p>
-            <div class="credits">
-              Designed by <a href="">LNK</a>
-            </div>
-          </div>
-        </div>
+      <div>
+        Built with caffeine, clean HTML, and an unreasonable number of browser tabs. &copy; 2026 <strong>Liyan Nechikaden</strong>.
+      </div>
+      <div>
+        <span style="color: var(--accent-crimson);">●</span> SYNCED // KERALA, INDIA
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
+  <!-- Script Engine -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
