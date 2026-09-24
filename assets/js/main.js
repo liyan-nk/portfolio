@@ -1,10 +1,10 @@
 /**
- * Tactical Portfolio Engine (Personality, Cursor & Interaction Engine)
+ * Playful Portfolio Engine (Interaction & Cursor Handler)
  * Author: Liyan Nechikaden
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Tactical Reticle Custom Cursor (GPU Accelerated, 1:1 Synchronized)
+  // 1. Playful Custom Ring Cursor (GPU Accelerated, 1:1 Synchronized)
   const cursor = document.getElementById('custom-cursor');
   const cursorDot = document.getElementById('custom-cursor-dot');
   const isFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const animateCursor = () => {
-      // Smooth spring follow for outer tactical reticle bracket
+      // Smooth spring follow for outer ring cursor
       cursorX += (mouseX - cursorX) * 0.35;
       cursorY += (mouseY - cursorY) * 0.35;
       cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0) translate(-50%, -50%)`;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cursorDot.style.opacity = '1';
     });
 
-    // Event Delegation for hover target activation across all current and future interactive elements
+    // Event Delegation for hover target activation across interactive elements
     document.addEventListener('mouseover', (e) => {
       const isInteractive = e.target.closest('a, button, input, textarea, select, label, [role="button"], .project-card, .skill-card, .timeline-content, .social-icon-btn, .nav-brand');
       if (isInteractive) {
@@ -106,12 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3500);
   }
 
-  // 4. Secret Bat-Signal / Diagnostic Easter Egg on Brand Click
+  // 4. Playful Diagnostic Easter Egg on Brand Click
   const brandLogo = document.querySelector('.nav-brand');
   if (brandLogo) {
     brandLogo.addEventListener('click', (e) => {
       if (window.scrollY < 100) {
-        showToast('[ SYSTEM DIAGNOSTIC // 0 ERRORS FOUND. CAFFEINE LEVEL: 98% ⚡ ]');
+        showToast('Caffeine level: 98%. Zero critical errors found. ⚡');
       }
     });
   }
